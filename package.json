@@ -1,0 +1,28 @@
+{
+  "name": "web_practice",
+  "version": "1.0.0",
+  "description": "web app practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbendary25/web_practice.git"
+  },
+  "author": "samer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbendary25/web_practice/issues"
+  },
+  "homepage": "https://github.com/sbendary25/web_practice#readme",
+  "dependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0"
+  }
+}
