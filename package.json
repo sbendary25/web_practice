@@ -4,11 +4,12 @@
   "description": "web app practice",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "babel-node ./server/index.js",
     "lint": "eslint . --ext .js,.jsx",
+    "dev": "nodemon --exec babel-node ./server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "pre-commit" : [
+  "pre-commit": [
     "lint"
   ],
   "repository": {
@@ -23,7 +24,13 @@
   "homepage": "https://github.com/sbendary25/web_practice#readme",
   "dependencies": {
     "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0"
+    "@babel/core": "^7.0.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3"
   },
   "devDependencies": {
     "@babel/node": "^7.2.2",
@@ -35,6 +42,7 @@
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.10",
     "pre-commit": "^1.2.2"
   }
 }
